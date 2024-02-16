@@ -4,8 +4,6 @@ GenericGraphPlugin
 Generic graph data structure plugin version extended for working with dialogues
 Works with both Unreal Engine 4 and 5
 
-.. image:: docs/images/GenericGraph.png
-
 Feature Base
 -------
 
@@ -22,7 +20,10 @@ Feature Extended
 * UE4/UE5 BehaviorTree-like asset editor
 * Player and NPC Dialogues Nodes
 * GameplayTag System 
-* Condition and Result of the dialogue choices
+* Conditions and Results structs of the dialogue choices
+* Structs can be extended
+* Localization Support
+* Blueprints friendly interface
 
 Usage Base
 -----
@@ -46,20 +47,12 @@ Install
 Tutorial
 --------
 
-`Dialogue System`_ (WIP)
-
-Example
--------
-
-Dialogue System and ability system: SRPGTemplate_
-
-.. image:: docs/images/dialogue/dialogue01.png
-
-.. image:: docs/images/dialogue/dialogue02.png
-
-.. image:: docs/images/dialogue/dialogue03.png
-
-.. image:: docs/images/ability-graph.png
-
-.. _Dialogue System: https://jinyuliao.github.io/blog/html/2017/12/15/ue4_dialogue_system_part1.html
-.. _SRPGTemplate: https://github.com/jinyuliao/SRPGTemplate
+1. Store Dialogue Graph object where you need to access Dialogue Nodes.
+2. Initialize your GamePlayTags for provided Dialogue Graph. Use InitializeValidationTags() method.
+3. Use GetStartDialogueNode() to get first NPC Node. If Dialogue Graph have few brunches.
+Brunch will be chosen based on provided tags.
+4. Use get GetPlayerDialoguesNodes() or GetNPCDialoguesNodes() to return nodes from source node.
+Important! PlayerNodes must return NPC Nodes. NPC Nodes must return player nodes. Build you graph properly!
+5. Use GetVisualData() in node to return Node visual data.
+6. Use GetConditionData() in NPC or Player Node to return node condition data (GameplayTags).
+7. Use GetResultData() in Player node to return node result data (GameplayTags).
