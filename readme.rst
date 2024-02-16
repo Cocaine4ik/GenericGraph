@@ -1,26 +1,40 @@
 GenericGraphPlugin
 ==================
 
-Generic graph data structure plugin for ue4
+Generic graph data structure plugin version extended for working with dialogues
+Works with both Unreal Engine 4 and 5
 
 .. image:: docs/images/GenericGraph.png
 
-Feature
+Feature Base
 -------
 
 * Custom asset type
-* UE4 BehaviorTree-like asset editor
+* UE4/UE5 BehaviorTree-like asset editor
 * Extendable graph node type
 * Extendable graph edge type
 * Extendable graph type(new asset type with generic graph editor, C++ only)
 
-Usage
+Feature Extended
+-------
+
+* Dialogue graph data asset type
+* UE4/UE5 BehaviorTree-like asset editor
+* Player and NPC Dialogues Nodes
+* GameplayTag System 
+* Condition and Result of the dialogue choices
+
+Usage Base
 -----
 
 * Ability system
 * Dialogue system
 * Quest system
 * Etc
+
+Usage Extended
+-----
+* Dialogue system with choices and results based on GameplayTags
 
 Install
 -------
