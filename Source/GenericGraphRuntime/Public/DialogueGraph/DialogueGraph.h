@@ -33,23 +33,28 @@ public:
      */
     UFUNCTION(BlueprintCallable)
     void InitializeValidationTags(const FGameplayTagContainer& GamePlayTags);
+    
     /**
-     * 
-     * @return 
+     * Return start NPC Dialogue Node based on provided Tags
+     * If Gameplay tags were not provided
+     * return first node
+     * @return UNPCDialogueGraphNode*
      */
     UFUNCTION(BlueprintCallable)
     UNPCDialogueGraphNode* GetStartDialogueNode() const;
+    
     /**
-     * 
-     * @param SourceNode 
-     * @return 
+     * Return NPC Dialogue Node from source Player Dialogue Node
+     * @param SourceNode UPlayerDialogueGraphNode*
+     * @return UNPCDialogueGraphNode*
      */
     UFUNCTION(BlueprintCallable)
     UNPCDialogueGraphNode* GetNPCDialogueNode(const UPlayerDialogueGraphNode* SourceNode) const;
+    
     /**
-     * 
-     * @param SourceNode 
-     * @return 
+     * Return Player Dialogue Nodes arrays form source NPC Dialogue Node
+     * @param SourceNode UNPCDialogueGraphNode*
+     * @return TArray<UPlayerDialogueGraphNode*>
      */
     UFUNCTION(BlueprintCallable)
     TArray<UPlayerDialogueGraphNode*> GetPlayerDialogueNodes(const UNPCDialogueGraphNode* SourceNode) const;
