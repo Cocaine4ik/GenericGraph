@@ -42,9 +42,9 @@ Usage Extended
 Install
 -------
 
-#. Clone this project to ${YourProject}/Plugins/
-#. Generate project file
-#. Compile
+1. Clone this project to ${YourProject}/Plugins/
+2. Generate project file
+3. Compile
 
 Tutorial
 --------
