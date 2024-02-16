@@ -1,6 +1,8 @@
 # GenericGraphPlugin
 ==================
 
+![photo_2024-02-16_13-32-43](https://github.com/Cocaine4ik/GenericGraph/assets/35273835/b797f78d-4f3a-4c2b-9cd9-99fdc4ca0689)
+
 Generic graph data structure plugin version extended for working with dialogues
 Works with both Unreal Engine 4 and 5
 
@@ -22,7 +24,7 @@ Feature Extended
 * GameplayTag System 
 * Conditions and Results structs of the dialogue choices
 * Structs can be extended
-* Localization Support
+* Localization support
 * Blueprints friendly interface
 
 Usage Base
