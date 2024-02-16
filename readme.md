@@ -1,4 +1,4 @@
-GenericGraphPlugin
+# GenericGraphPlugin
 ==================
 
 Generic graph data structure plugin version extended for working with dialogues
